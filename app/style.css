@@ -214,6 +214,12 @@ margin: 40px;
     background-size: cover;    
     
   }
+img.avatar {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
   .bottom-blur {
   position: absolute;
@@ -274,7 +280,9 @@ margin: 40px;
   }
 
   .grid img {
-    height: 140px;
+    height: 150px;
+    border-radius: 5px;
+    width: 600px;
   }
 
   .carousel,
@@ -286,3 +294,5 @@ margin: 40px;
     margin: 20px;
   }
 }
+
+
