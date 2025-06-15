@@ -21,13 +21,19 @@ export default function Navbar() {
         <Image src="/watchtogether.png" alt="" width={32} height={32} />
       </div>
 
-      <div className="right">
-        <Link href="/netflix"><Image src="/netflix.jpg" alt="Netflix" width={80} height={48} /></Link>
-        <Link href="/prime"><Image src="/pv.png"      alt="Prime Video" width={80} height={48} /></Link>
-        <Link href="/hotstar"><Image src="/hotstar.jpeg" alt="Hotstar" width={80} height={48} /></Link>
-        <Image src="/setting.png"   alt="Settings"   width={24} height={24} className="symbol" />
-        <Image src="/dashboard.png" alt="Dashboard"  width={24} height={24} className="symbol" />
-      </div>
+     <div className="right">
+  <Link href="https://enhanced-fire-tv.vercel.app/netflix">
+    <Image src="/netflix.jpg" alt="Netflix" width={80} height={48} />
+  </Link>
+  <Link href="https://enhanced-fire-tv.vercel.app/prime">
+    <Image src="/pv.png" alt="Prime Video" width={80} height={48} />
+  </Link>
+  <Link href="https://enhanced-fire-tv.vercel.app/hotstar">
+    <Image src="/hotstar.jpeg" alt="Hotstar" width={80} height={48} />
+  </Link>
+  <Image src="/setting.png" alt="Settings" width={24} height={24} className="symbol" />
+  <Image src="/dashboard.png" alt="Dashboard" width={24} height={24} className="symbol" />
+</div>
     </nav>
   );
 }
