@@ -1,29 +1,33 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="left">
-        <img src="/user (2).png" alt="err" style={{ width: '60px', height: '60px', borderRadius: '50%' }} />
-        <img src="/input.png" alt="err" />
-        <img src="/search.png" alt="err" />
+
+        <Image src="/user (2).png" alt="Profile" width={48} height={48} className="avatar" />
+        <Image src="/input.png" alt="" width={32} height={32} />
+        <Image src="/search.png" alt="" width={32} height={32} />
+
         <div className="icon-with-label">
-          <img src="/main.png" alt="Home" className="home-icon" />
+          <Image src="/main.png" alt="Home" width={40} height={40} className="home-icon" />
           <span className="home-label">Home</span>
         </div>
-        <img src="/tv.png" alt="err" />
-        <img src="/bookmark.png" alt="err" />
-        <img src="/watchtogether.png" alt="err" />
-      </div>
-      <div className="right">
-        <Link href="/netflix"><img src="/netflix.jpg" alt="Netflix" /></Link>
-        <Link href="/prime"><img src="/pv.png" alt="Prime Video" /></Link>
-        <Link href="/hotstar"><img src="/hotstar.jpeg" alt="Hotstar" /></Link>
-         <img src="/setting.png" className="symbol" alt="err" />
-          <img src="/dashboard.png" className="symbol" alt="err" />
 
+        <Image src="/tv.png" alt="" width={32} height={32} />
+        <Image src="/bookmark.png" alt="" width={32} height={32} />
+        <Image src="/watchtogether.png" alt="" width={32} height={32} />
       </div>
-    </div>
+
+      <div className="right">
+        <Link href="/netflix"><Image src="/netflix.jpg" alt="Netflix" width={80} height={48} /></Link>
+        <Link href="/prime"><Image src="/pv.png"      alt="Prime Video" width={80} height={48} /></Link>
+        <Link href="/hotstar"><Image src="/hotstar.jpeg" alt="Hotstar" width={80} height={48} /></Link>
+        <Image src="/setting.png"   alt="Settings"   width={24} height={24} className="symbol" />
+        <Image src="/dashboard.png" alt="Dashboard"  width={24} height={24} className="symbol" />
+      </div>
+    </nav>
   );
 }
